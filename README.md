@@ -30,8 +30,16 @@ when you login, mybash would ask you for VerCode
 
 a) just input the password you set in $HOME/.mybash/passwd
 
-b）just input the vercode from google authenticator app, with the key set in $HOME/.google_authenticator
+b）just input the vercode from google authenticator app, with the key set in $HOME/.google_authenticator, or use google-authenticator to make a key.
+
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+
+yum install google-authenticator
+
+google-authenticator 
 
 
-Congratulations, that's all for mybash.
+
+
+6. that's all for mybash.
 
