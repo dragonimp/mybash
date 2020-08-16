@@ -12,15 +12,23 @@ cd /root/bin
 
 sh ./install.sh
 
-3. choose any user to work with mybash. 
+3. set a password in 
 
-a) edit /etc/passwd, change bash of the user you choose "/bin/bash" to "/usr/bin/mybash"
+a) options 1 : edit $HOME/.mybash/passwd , set vercode for login
+b) options 2 : edit $HOME/.google_authenticator , set vercode key 
 
-b) set a password in $HOME/.mybash/passwd
+4. choose any user to work with mybash. 
 
-4. login check if this works right.
+a) options 1 : edit /etc/bashrc for global or $HOME/.bashrc for user，add "source /usr/bin/mybash login" 
+b) options 2 : edit /etc/passwd, change bash of the user you choose "/bin/bash" to "/usr/bin/mybash"
 
-when you login, mybash would ask you for VerCode, just input the password you set in $HOME/.mybash/passwd
+5. login check if this works right.
+
+when you login, mybash would ask you for VerCode
+
+a) just input the password you set in $HOME/.mybash/passwd
+b）just input the vercode from google authenticator app, with the key set in $HOME/.google_authenticator
+
 
 Congratulations, that's all for mybash.
 
